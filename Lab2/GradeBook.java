@@ -79,25 +79,18 @@ public class GradeBook
          return sum() - minimum();
    }
    
-   /**
-    * 
-    * @return the int of scores
-    */
-   public int getScoreSize() 
+   public int getScoresSize()
    {
 	   return scoresSize;
    }
-   /**
-    * @return String of Gradebook scores
-    */
+   
    public String toString()
    {
-       String output = "";
-       for(int i = 0; i < scoresSize; i++)
-       {
-    	   output += scores[i] + " ";
-       }
-       System.out.println(output);
-       return output;
+	   String string = "";
+	   for (int i = 0; i < scoresSize; i++)
+	   {
+		   string += scores[i]+" ";
+	   }
+	   return string;
    }
 }
